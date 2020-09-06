@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" />
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="description" name="This is testing project by Git and stylesheet" />
+	<meta charset="keyword" name="Git, Github, VCS" />
+
+	<title>Git</title>
+
+	<link rel="stylesheet" href="css/style.css" />
+	
+</head>
+
+<body>
+
+	<!-- This is main container  -->
+
+	<div class="main-container">
+		<header>
+			<h1> VCS (Git, Github, gh-pages) </h1>
+			<h2> My stylesheet </h2>
+			<img src="img/github-logo.png" alt="github-img">
+			<h3> by Ihor Abakumov </h3>
+		</header>
+	
+		<!-- Base Command -->
+
+		<div class="commands-base">
+			<h2>Git Commands - base</h2>
+
+			<!-- #1 section -->
+			<section>
+				<h3>git config</h3>
+				<span class="usage">Usage:</span> <span class="code"> git config –global user.name “[name]” </span>
+				<br> 
+				<span class="usage">Usage:</span> <span class="code"> git config –global user.email “[email address]”
+				</span> 
+				<p>This command sets the author name and email address respectively to be used with your commits.</p>
+			</section>
+
+			<!-- #2 section -->
+			<section>
+				<h3>git init</h3>
+				<span class="usage">Usage:</span> <span class="code">git init [repository name]</span> 
+				<p>This command is used to start a new repository.</p> 
+			</section>
+
+			<!-- #3 section -->
+			<section>
+				<h3>git status</h3>
+				<span class="usage">Usage:</span> <span class="code">git status</span> 
+				<p>This command lists all the files that have to be committed.</p> 
+			</section>
+
+			<!-- #4 section -->
+			<section>
+				<h3>git add</h3>
+				<span class="usage">Usage:</span> <span class="code">git add [file]</span> 
+				<p>This command adds a file to the staging area.</p> 
+				<span class="usage">Usage:</span> <span class="code">git add *</span> 
+				<p>This command adds one or more to the staging area.</p>
+			</section>
+
+			<!-- #5 section -->
+			<section>
+				<h3>git commit</h3>
+				<span class="usage">Usage:</span> <span class="code">git commit -m “[ Type in the commit message]”</span>
+				
+				<p>This command records or snapshots the file permanently in the version history.</p> 
+				<span class="usage">Usage:</span> <span class="code">git commit -a</span> 
+				<p>This command commits any files you’ve added with the git add command and also commits any files you’ve
+					changed since
+					then.</p>
+			</section>
+
+			<!-- #6 section -->
+			<section>
+				<h3>git log</h3>
+				<span class="usage">Usage:</span> <span class="code">git log</span> 
+				<p>This command is used to list the version history for the current branch.</p> 
+			</section>
+
+			<!-- #7 section -->
+			<section>
+				<h3>git checkout</h3>
+				<span class="usage">Usage:</span> <span class="code">git checkout [branch name]</span> 
+				<p>This command is used to switch from one branch to another.</p> 
+				<span class="usage">Usage:</span> <span class="code">git checkout -b [branch name]</span> 
+				<p>This command creates a new branch and also switches to it.</p> 
+			</section>
+
+			<!-- #8 section -->
+			<section>
+				<h3>git branch</h3>
+				<span class="usage">Usage:</span> <span class="code">git branch</span> 
+				<p>This command lists all the local branches in the current repository.</p> 
+				<span class="usage">Usage:</span> <span class="code">git branch [branch name]</span> 
+				<p>This command creates a new branch.</p> 
+				<span class="usage">Usage:</span> <span class="code">git branch -d [branch name]</span> 
+				<p>This command deletes the feature branch.</p> 
+			</section>
+
+			<!-- #9 section -->
+			<section>
+				<h3>git push</h3>
+				<span class="usage">Usage:</span> <span class="code">git push [variable name] master</span> 
+				<p>This command sends the committed changes of master branch to your remote repository.</p> 
+				<span class="usage">Usage:</span> <span class="code">git push [variable name] [branch]</span> 
+				<p>This command sends the branch commits to your remote repository.</p> 
+				<span class="usage">Usage:</span> <span class="code">git push –all [variable name]</span> 
+				<p>This command pushes all branches to your remote repository.</p> 
+			</section>
+
+			<!-- #10 section -->
+			<section>
+				<h3>git pull</h3>
+				<span class="usage">Usage:</span> <span class="code">git pull [Repository Link]</span> 
+				<p>This command fetches and merges changes on the remote server to your working directory.</p> 
+			</section>
+
+			<!-- #11 section -->
+			<section>
+				<h3>git merge</h3>
+				<span class="usage">Usage:</span> <span class="code">git merge [branch name]</span> 
+				<p>This command merges the specified branch’s history into the current branch.</p> 
+			</section>
+
+			<!-- #12 section -->
+			<section>
+				<h3>git clone</h3>
+				<span class="usage">Usage:</span> <span class="code">git clone [url]</span> 
+				<p>This command is used to obtain a repository from an existing URL.</p> 
+			</section>
+
+		</div>
+
+		<!-- Advanced Commands -->
+
+		<div class="commands-advanced">
+
+			<h2>Commands - Advanced</h2>
+
+			<ul>
+
+				<li><strong>git revert</strong> is used to record some new commits to reverse the effect of some earlier
+					commits (often only a faulty one). 
+					<a href="https://git-scm.com/docs/git-revert" target="_blank">git-revert - Revert some existing
+						commits</a>
+				</li>
+
+				<li><strong>git cherry-pick</strong> it allows you to pick up one commit from another branch and insert it
+					into the current one. As an option, the commit ID is transmitted in another branch.
+					<a href="https://git-scm.com/docs/git-cherry-pick" target="_blank">git-cherry-pick - Apply the changes
+						introduced by some
+						existing commits</a>
+				</li>
+
+				<li><strong>git reset</strong> will take your branch back to a certain point in the commit history, but
+					there are 3 different levels to this: soft, hard, mixed.
+					<a href="https://dev.to/char_bone/how-and-when-to-use-git-reset-2om6" target="_blank">How and when to
+						use git reset</a>
+				</li>
+
+				<li><strong>git rebase</strong> combines changes made in one branch with the other branch, but it rewrites
+					history, because it transfers completed work.
+					<a href="https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---rebase-mergesrebase-cousinsno-rebase-cousins"
+						target="_blank">git-rebase
+						- Reapply commits on top of another base tip</a>
+				</li>
+
+				<li><strong>git stash</strong> can help you to (temporarily but safely) store your uncommitted local changes
+					- and leave you with a clean working copy.
+					<a href="https://www.git-tower.com/learn/git/faq/save-changes-with-git-stash" target="_blank">How to
+						save your changes
+						temporarily</a>
+				</li>
+
+			</ul>
+
+		</div>
+
+		<!-- About gitignore -->
+
+		<div class="git">
+			<h2>How to use a <span class="gitignore">.gitignore </span> file and what is it?</h2>
+
+			<p>
+				We use a .gitignore file if there are some files that we
+				<b>never want commit</b>. It lets Git know that it should ignore
+				certain files and <b>not track them.</b>
+			</p>
+
+			<p>
+				Here's how it works. A .gitignore file is a plain text file where each
+				line contains a pattern for files/directories to ignore. Generally,
+				this is placed in the root folder of the repository. However, you can
+				put it in any folder in the repository and you can also have
+				multiple .gitignore files. You can also create a global .gitignore
+				file and any entries in that file will be ignored in all of your Git
+				repositories.
+			</p>
+
+			
+
+			<ul class="wildcard">
+				<h2>Wildcard</h2>	
+				<li>
+					<span> <b> * </b> </span> - matches 0 or more characters (except the/). So, for example, *.log matches
+					any
+					file ending with the .log
+					extension.
+				</li>
+				<li>
+					<span> <b> ! </b> </span> - as a prefix to negate a file that would be ignored, for example,
+					"!example.log"
+				</li>
+				<li>
+					<span> <b> *~ </b> </span> - matches any file ending with ~, such as "index.html~"
+				</li>
+
+			</ul>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>
